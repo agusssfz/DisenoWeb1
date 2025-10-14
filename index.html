@@ -14,40 +14,93 @@
   <link rel="stylesheet" href="css\estilos.css">
 </head>
   <body>
+    <!-- NAVBAR  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary mi-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">DentalTech</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">DentalTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Instalaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tratamientos
-              </a>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Tratamientos</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Blanqueamiento</a></li>
+                <li><a class="dropdown-item" href="#">Ortodoncia</a></li>
+                <li><a class="dropdown-item" href="#">Implantes</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+    <!-- SECCIÓN DE INICIO -->
+   
+  <div class="inicio-wrapper">
+
+    <div class="container-inicio">
+        <h1 class="display-4">Centro Odontológico
+DentalTech</h1>
+        <p class="lead">En DentalTech, combinamos innovación, experiencia y pasión por la odontología. Descubrí tratamientos modernos diseñados para lograr la sonrisa que siempre soñaste.</p>
+      </div>
+      <div class="container-inicio">
+
+        <div class="card mx-auto p-4 shadow-sm formulario-contacto text-center m-4">
+          <h1>¡Solicita tu turno ahora mismo!</h1>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre <span class="text-danger opacity-75">*</span></label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre..." required>
+            </div>
+
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresar apellido...">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span class="text-danger opacity-75">*</span></label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresar email..." required>
+            </div>
+
+            <div class="mb-3">
+              <label for="tipo-paciente" class="form-label">Tipo de paciente <span class="text-danger opacity-75">*</span></label>
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccione una opcion</button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Soy un paciente nuevo</a></li>
+                <li><a class="dropdown-item" href="#">No soy un paciente nuevo</a></li>   
+              </ul>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            <small class=" d-block mt-2 text-center opacity-75"><span class="text-danger">*</span> Campos obligatorios</small>
+          </form>
+        </div>
+
+      </div>
+  </div>
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="JS/contacto.js"></script> </body>
 </html>

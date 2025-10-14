@@ -15,7 +15,7 @@
     --h1-color: #333;
     --h2-color: #274B59;
     --h3-color: #333;
-    --text-color: #222;
+    --text-color: #ffffff;
     --font-family: 'Alata', sans-serif;
     
 }
@@ -51,6 +51,25 @@ a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+.container-inicio {
+    width: 400px; 
+    margin: 60px; 
+    padding: 25px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.inicio-wrapper {
+    display: flex;
+    justify-content: center; /* centra horizontalmente las cajas */
+    align-items: flex-start;
+    gap: 20px; /* espacio entre contenedores */
+    flex-wrap: wrap; /* permite que bajen en pantallas pequeñas */
+    padding: 20px 0;
+}
+
 button {
     background: var(--primary-color);
     color: var(--white-color);
@@ -76,9 +95,15 @@ h2 {
   font-family: 'Alexandria', sans-serif;
 }
 
-/* Si querés dar un fondo especial solo a los h2 dentro de title-section */
 .title-section > h2 {
   background-color: var(--secondary-color);
   padding: 10px 20px;
   display: inline-block;
+}
+
+.text-section {
+    display: flex;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
 }
