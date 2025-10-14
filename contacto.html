@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contáctanos - DentalTech</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/contacto.css">
+  </head>
+
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mi-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DentalTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instalaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Tratamientos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blanqueamiento</a></li>
+                <li><a class="dropdown-item" href="#">Ortodoncia</a></li>
+                <li><a class="dropdown-item" href="#">Implantes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="contacto">
+      <div class="container-fluid">
+        <div class="row title-section">
+            <h2>Contáctanos</h2>
+        <div class="card mx-auto p-4 shadow-sm formulario-contacto text-center m-4">
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre <span class="text-danger opacity-75">*</span></label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre..." required>
+            </div>
+
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresar apellido...">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span class="text-danger opacity-75">*</span></label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresar email..." required>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje <span class="text-danger opacity-75">*</span></label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Deja por aquí tu comentario..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            <small class=" d-block mt-2 text-center opacity-75"><span class="text-danger">*</span> Campos obligatorios</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">© 2025 - DentalTech Centro Odontológico</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="JS/contacto.js"></script>
+  </body>
+</html>

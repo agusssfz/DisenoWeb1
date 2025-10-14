@@ -1,0 +1,38 @@
+@import url('estilos.css');
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Sección de contacto */
+
+.formulario-contacto {
+  background-color: var(--secondary-color);
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  border: none;
+  border-radius: 4px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.formulario-contacto button {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #35646e;
+}
