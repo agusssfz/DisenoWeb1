@@ -137,17 +137,22 @@ h2 {
 
 .icon-link {
     display: inline-flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 0 1 140px;
     width: 120px;
-    height: 120px;
+    height: 140px; 
     border-radius: 50%;
     background: var(--secondary-color);
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none; 
+    text-decoration: none;
     margin: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     transition: transform .15s ease, box-shadow .15s ease;
     color: inherit;
+    padding: 12px; 
+    text-align: center;
 }
 
 .icon-link:hover {
@@ -162,9 +167,26 @@ h2 {
     height: 60%;
     object-fit: contain;
     display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
+.icon-link h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--white-color);
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    background: transparent; /* si no querés que quede dentro del círculo, sacalo del .icon-link en el HTML */
+}
+
+.imagen-inicio {
+    text-align:left;
+    margin-top: 20px;
+    justify-content: center;
+
+
+}
 
 @media (max-width: 480px) {
     .icon-link { width: 88px; height: 88px; }
