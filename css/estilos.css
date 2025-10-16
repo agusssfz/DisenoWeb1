@@ -177,15 +177,62 @@ h2 {
     line-height: 1;
     width: 100%;
     text-align: center;
-    background: transparent; /* si no querés que quede dentro del círculo, sacalo del .icon-link en el HTML */
+    background: transparent;  
 }
 
 .imagen-inicio {
-    text-align:left;
-    margin-top: 20px;
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
+    position: relative; 
+}
 
 
+.image-overlay {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.image-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(100% - 40px); 
+    max-width: 400px;
+}
+
+
+.overlay-text p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.mapa-google {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+    .overlay-text h3 { font-size: 1.2rem; }
+    .overlay-text p  { font-size: 0.9rem; }
+    .overlay-text { padding: 10px 12px; }
 }
 
 @media (max-width: 480px) {
