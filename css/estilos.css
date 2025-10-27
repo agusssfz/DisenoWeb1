@@ -91,7 +91,6 @@ button:hover {
 
 h2 {
   color: var(--white-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: 'Alexandria', sans-serif;
 }
 
@@ -99,6 +98,7 @@ h2 {
   background-color: var(--secondary-color);
   padding: 10px 20px;
   display: inline-block;
+  text-shadow: none;
 }
 
 .text-section {
@@ -107,6 +107,21 @@ h2 {
     line-height: 1.6;
     font-size: 1.1em;
 }
+
+.btn-enviar {
+    background-color: #467F8C;
+    border-color: #467F8C;
+    color: #ffffff;
+}
+
+.btn-enviar:hover,
+.btn-enviar:focus {
+    background-color: #3a6a72; 
+    border-color: #3a6a72;
+    color: #ffffff;
+    box-shadow: none;
+}
+
 
 .icono-tratamientos {
     width: 100px;
@@ -227,6 +242,15 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 40px 0;
+}
+
+.parrafo-nosotros{
+    color: black;
+}
+
+.titulo-nosotros {
+    color: #000 !important;
+    text-shadow: none; 
 }
 
 @media (max-width: 600px) {
