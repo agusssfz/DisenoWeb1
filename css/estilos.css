@@ -301,3 +301,37 @@ h2 {
 .footer-dentaltech a i{
   font-size: 50px !important;
 }
+
+//Cambios de Paulo al CSS, esperen cosas sin usar porque voy a prueba y error
+.card-1{
+  background-color: var(--secondary-color);
+  border-left: 5px solid var(--primary-color);
+}
+.card-1 h3{
+  color: var(--primary-color)
+}
+.card-1 .list-group-item{
+  background-color: var(--background-color)
+}
+.card-2{
+  background-color: var(--primary-color);
+  border: 5px solid var(--secondary-color)
+}
+
+//Código para que la imágen del tratamiento se deslize hacia la pantalla
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);original */
+      opacity: 1;
+    }
+}
+
+.trtmnt-img.carga-animada {
+    animation: slideInFromLeft 1s ease-out forwards; 
+    opacity: 0; 
+}
