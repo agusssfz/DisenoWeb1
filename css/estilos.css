@@ -330,6 +330,16 @@ h2 {
 }
 
 
+.contenedor-instalaciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 10px;
+    background-color: var(--secondary-color);
+}
+
 /*footer*/
 
 .footer-dentaltech {
