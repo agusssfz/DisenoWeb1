@@ -9,12 +9,13 @@
 :root{
     --primary-color: #467F8C;
     --secondary-color: #73B1BF;
-    --background-color: #B4D2D9;
+    --background-color: #fff;
     --white-color: #fff;
     --links-color: #0077cc;
     --h1-color: #333;
     --h2-color: #274B59;
     --h3-color: #333;
+    --h4-color: #333;
     --text-color: #ffffff;
     --font-family: 'Alata', sans-serif;
     
@@ -83,7 +84,7 @@ a:hover {
 
 .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
     background: var(--white-color);
     border-radius: 8px;
@@ -92,8 +93,8 @@ a:hover {
 
 .container-inicio {
     width: 400px; 
-    margin: 60px; 
-    padding: 25px;
+    margin: 20px; 
+    padding: 10px;
     background: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -293,11 +294,21 @@ h2 {
 
 .parrafo-nosotros{
     color: black;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
 }
 
 .titulo-nosotros {
-    color: #000 !important;
+    color:var(--primary-color) !important;
     text-shadow: none; 
+}
+.imagen-dentistas{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-top: 20px;
 }
 
 @media (max-width: 992px) {
@@ -377,7 +388,7 @@ h2 {
   font-size: 50px !important;
 }
 
-//Cambios de Paulo al CSS, esperen cosas sin usar porque voy a prueba y error
+/*Cambios de Paulo al CSS, esperen cosas sin usar porque voy a prueba y error */
 .card-1{
   background-color: var(--secondary-color);
   border-left: 5px solid var(--primary-color);
@@ -393,7 +404,7 @@ h2 {
   border: 5px solid var(--secondary-color)
 }
 
-//Código para que la imágen del tratamiento se deslize hacia la pantalla
+/*Código para que la imágen del tratamiento se deslize hacia la pantalla*/
 
 @keyframes slideInFromLeft {
     0% {
@@ -401,7 +412,7 @@ h2 {
       opacity: 0;
     }
     100% {
-      transform: translateX(0);original */
+      transform: translateX(0);/*original */
       opacity: 1;
     }
 }
