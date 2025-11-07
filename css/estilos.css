@@ -302,6 +302,7 @@ h2 {
 .titulo-nosotros {
     color:var(--primary-color) !important;
     text-shadow: none; 
+    
 }
 .imagen-dentistas{
     width: 100%;
