@@ -302,7 +302,6 @@ h2 {
 .titulo-nosotros {
     color:var(--primary-color) !important;
     text-shadow: none; 
-    
 }
 .imagen-dentistas{
     width: 100%;
@@ -421,4 +420,12 @@ h2 {
 .trtmnt-img.carga-animada {
     animation: slideInFromLeft 1s ease-out forwards; 
     opacity: 0; 
+}
+
+/*Agrego este estilo para que todas las imagenes tengan el mismo tamaño*/
+.trtmnt-img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    max-width: 100%;
 }
