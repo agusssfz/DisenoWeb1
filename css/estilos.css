@@ -429,3 +429,85 @@ h2 {
     display: block;
     max-width: 100%;
 }
+
+
+.nosotros-hero {
+  background: linear-gradient(90deg, rgba(70,127,140,0.06), rgba(115,177,191,0.03));
+  color: var(--h2-color);
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.nosotros-hero .display-5 {
+  color: var(--h2-color);
+  font-weight: 100;
+  margin-bottom: 0.3rem;
+}
+
+.section-nosotros .card-plain {
+  border: none;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.section-nosotros .titulo-nosotros {
+  color: --var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.staff-section h2, .faq-section h2 {
+  color: --var(--primary-color);
+  font-weight: 500;
+}
+
+.staff-card {
+  border: none;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 14px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(24,40,44,0.08);
+}
+
+.imagen-dentistas {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(9,24,28,0.06);
+  max-width: 520px;
+  width: 100%;
+}
+
+
+.faq-section .accordion-button {
+  background: #ffffff;
+  color: #123;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+
+
+
+.nosotros-hero, .section-nosotros, .staff-section, .faq-section {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #274B59;
+}
+
+@media (max-width: 768px) {
+  .nosotros-hero { padding-top: 20px; padding-bottom: 20px; }
+  .imagen-dentistas { max-width: 100%; }
+  .parrafo-nosotros { font-size: 0.98rem; }
+}
+
+@media (max-width: 480px) {
+  .nosotros-hero .display-5 { font-size: 1.4rem; }
+  .parrafo-nosotros { font-size: 0.95rem; }
+}
+
