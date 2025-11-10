@@ -7,7 +7,7 @@
 }
 
 :root{
-    --primary-color: #467F8C;
+    --primary-color: #467F8C !important;
     --secondary-color: #73B1BF;
     --background-color: #fff;
     --white-color: #fff;
@@ -127,15 +127,18 @@ button:hover {
 
 
 h2 {
-  color: var(--white-color);
+  color: var(--h2-color);
   font-family: 'Alexandria', sans-serif;
+  font-size: 2rem;
 }
 
 .title-section > h2 {
-  background-color: var(--secondary-color);
-  padding: 10px 20px;
+  background-color: var(--white-color);
+  padding: 15px 10px 10px;
   display: inline-block;
-  text-shadow: none;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.6);
+
+  margin: 0;
 }
 
 .text-section {

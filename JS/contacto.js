@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       return;
     }
+    /*modal*/
 
-    alert("Formulario enviado correctamente 🎉");
+    
     form.reset();
     form.classList.remove("was-validated");
   });
