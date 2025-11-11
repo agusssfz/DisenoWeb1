@@ -6,7 +6,7 @@ body {
   color: var(--text-color);
 }
 
-/* Sección de contacto */
+/* Sección de contacto/formulario */
 
 #contact-form {
   background-color: var(--secondary-color);
@@ -110,6 +110,72 @@ p {
   display: none;
 }
 
+/* Modal */
+
+.modal-backdrop.show{
+  z-index: 0;
+}
+
+#blur-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px) brightness(0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 1050; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, backdrop-filter 0.5s ease;
+}
+
+#blur-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.modal {
+  z-index: 1060 !important;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px) saturate(120%);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  animation: fadeInModal 0.3s ease-out;
+}
+
+.modal-title {
+  color: #1A374D; 
+}
+
+.btn-enviar {
+  background-color: #A9E4EF; 
+  color: #003C53;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #8cd4e2;
+}
+
+.btn-cancelar {
+  background-color: #F56C5E; 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-cancelar:hover {
+  background-color: #e65b50;
+}
+
+
+
 @media (max-width: 768px) {
  .info-direc{
   display: none;
@@ -124,8 +190,10 @@ p {
   justify-content:center;
   width: 300px;
   max-width: max-content;
-  
 }
+
+
+
  #contact-form{
   width: 50%;
  }

@@ -40,6 +40,7 @@
 
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
       <ul class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">INICIO</a>
         <a class="nav-link dropdown-toggle" href="#" id="tratamientosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         TRATAMIENTOS
                     </a>
@@ -61,7 +62,7 @@
 </nav>
 
     <!-- SECCION  CONTACTO -->
-    <section class="contacto">
+    <section class="contacto" >
   <div class="container-fluid">
     <div class="row title-section">
       <h2 class="text-center mb-4">Contáctanos</h2>
@@ -113,9 +114,28 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.5151714550484!2d-68.52653544186403!3d-31.53747343032146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140281b059031%3A0xbdafc7e302f74c9a!2sPlaza%2025%20de%20Mayo!5e0!3m2!1ses!2sar!4v1762723378870!5m2!1ses!2sar" 
         width="250" height="250" style="border:0;border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    
     </div>
   </div>
+
+  <div id="blur-overlay"></div>
+  
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 border-0 shadow-lg">
+      <div class="modal-header justify-content-center border-0">
+        <h5 class="modal-title fw-semibold" id="confirmModalLabel">Confirmar envío de formulario</h5>
+      </div>
+      <div class="modal-body text-center">
+        <p class="mb-4">¿Está seguro de enviar el mensaje?</p>
+        <div class="d-flex justify-content-center gap-3">
+          <button type="button" class="btn btn-enviar px-4" id="confirmarEnvio" data-bs-dismiss="modal">Enviar</button>
+          <button type="button" class="btn btn-cancelar px-4" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 
 
