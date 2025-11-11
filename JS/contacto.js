@@ -72,7 +72,7 @@ confirmModalEl.addEventListener("hidden.bs.modal", () => {
       "toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0 m-3 shadow-lg";
     toast.setAttribute("role", "alert");
     toast.innerHTML = `
-      <div class="d-flex">
+      <div class="d-flex" tabindex="1060">
         <div class="toast-body">
           ¡Tu mensaje ha sido enviado correctamente!
         </div>
