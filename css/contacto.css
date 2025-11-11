@@ -113,7 +113,7 @@ p {
 /* Modal */
 
 .modal-backdrop.show{
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 #blur-overlay {
