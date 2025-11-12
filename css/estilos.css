@@ -274,7 +274,7 @@ h2 {
   padding: 20px;
   font-size: 1.5rem;
   line-height: 1.6;
-    background: rgba(0, 0, 0, 0.35); /* negro suave transparente */
+    background: rgba(70, 127, 140, 0.55); 
   border-radius: 10px;
 }
 
@@ -355,6 +355,7 @@ h2 {
     align-items: center;
     padding: 20px 10px;
     background-color: var(--secondary-color);
+    border-radius: 10px;
 }
 
 /*footer*/
