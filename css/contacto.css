@@ -9,6 +9,10 @@ body {
 
 /* Sección de contacto/formulario */
 
+.form-control {
+border-radius: 0;
+}
+
 #contact-form {
   background-color: var(--secondary-color);
   max-width: 500px;
