@@ -187,31 +187,18 @@ input {
   #contact-form {
     width: 50%;
   }
-  
+
 }
 
 /* ---------- 768px ---------- */
 @media (max-width: 768px) {
 
   .info-direc {
-    display: none;
-  }
-
-  .info-direc-2 {
-    background: #35646e;
-    display: grid;
-    justify-content: center;
-    width: 70%;
-    
-  }
-
-  .info-direc-2 p,
-  .info-direc-2 iframe {
-    display: block;
+    width: 0;
   }
 
   #contact-form {
-    width: 70%;
+    width: 55%;
   }
 
   #contact-form button {
@@ -224,6 +211,24 @@ input {
   #contact-form {
     width: 100%;
   }
+
+  .info-direc {
+    display: none;
+  }
+
+  .info-direc-2 {
+    background: #35646e;
+    display: grid;
+    justify-content: center;
+    width: 70%;
+
+  }
+
+  .info-direc-2 p,
+  .info-direc-2 iframe {
+    display: block;
+  }
+
 }
 
 /* ---------- 425px ---------- */
